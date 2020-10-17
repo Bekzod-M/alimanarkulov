@@ -553,8 +553,10 @@ body.touch .submenu.open {
 }
 
 .footer__list {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+	gap: 30px;
 }
 
 .list-footer__title {
@@ -607,4 +609,8 @@ body.touch .submenu.open {
 	margin-bottom: 5px;
 	color: #404040;
 	text-align: center;
+}
+
+.footer__copyright p:last-child {
+	margin-bottom: 0;
 }
